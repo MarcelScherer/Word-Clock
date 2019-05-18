@@ -1,0 +1,9 @@
+[submodule "Software/lib/NTPClient"]
+	path = Software/lib/NTPClient
+	url = https://github.com/arduino-libraries/NTPClient
+[submodule "Software/lib/RTClib"]
+	path = Software/lib/RTClib
+	url = https://github.com/adafruit/RTClib
+[submodule "Software/lib/NeoPixelBux"]
+	path = Software/lib/NeoPixelBux
+	url = https://github.com/Makuna/NeoPixelBus
