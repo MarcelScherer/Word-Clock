@@ -49,7 +49,7 @@ void loop() {
     interruptCounter = 0;
     portEXIT_CRITICAL(&timerMux);                                    /* release semaphore */
 
-    clock_time_t timer = update_clock_time(ticks);
+    clock_time_t timer = update_clock_time(ticks);                   /* update actual time */
 #ifdef DEBUG
     Serial.print(timer.hour);
     Serial.print(":");
@@ -57,7 +57,8 @@ void loop() {
     Serial.print(":");
     Serial.println(timer.seconds);
 #endif
-    if((timer.hour - update_hour )%24 > UPDATE_TIME_VAL)
+    /* update time from internet or RTC */
+    if((timer.hour - update_hour )%24 > UPDATE_TIME_VAL)            
     {
 #ifdef DEBUG
     Serial.println("update time");
@@ -66,10 +67,12 @@ void loop() {
     Serial.print("timer.hour:");
     Serial.println(timer.hour);
 #endif
-      if(check_wlan_conection())
+      /* update time from internet if wlan is available */
+      if(check_wlan_conection())                                
       {
         timer = get_internet_time();
       }
+      /* or update from RTC */
       else if(USE_RTC)
       {
         timer = get_rtc_time();
@@ -78,26 +81,23 @@ void loop() {
       {
         
       }
+      update_hour = timer.hour;
     }
 
+    /* update all pixels from pixel array*/
     uint8_t * p_pixel_array = create_word_array(timer);
-    Serial.print("ARRRAY: ");
     for(int8_t i=0; i<NUM_OF_PIXEL; i++)
     {
       if(p_pixel_array[i]  == 1)
       {
         strip.SetPixelColor(i, COLOR_ON);
-        Serial.print(1);
       }
       else
       {
         strip.SetPixelColor(i, COLOR_OFF);
-        Serial.print(0);
       }
       
     }
-    Serial.println(" ");
-
     strip.Show();
   }
 }

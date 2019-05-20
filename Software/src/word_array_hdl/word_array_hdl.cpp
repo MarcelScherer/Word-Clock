@@ -7,8 +7,8 @@ void create_minutes(uint8_t * p_array, uint8_t minutes );
 
 uint8_t * create_word_array(clock_time_t actaul_time)
 {
-    static uint8_t pixelarray[NUM_OF_PIXEL];
-    std::fill_n(pixelarray, sizeof(pixelarray), 0);
+    static uint8_t pixelarray[NUM_OF_PIXEL];                            // pixel arry for pixel actuation
+    std::fill_n(pixelarray, sizeof(pixelarray), 0);                     // fill array with zeros
 
     /* ES */
     pixelarray[110] = 1;
@@ -18,32 +18,42 @@ uint8_t * create_word_array(clock_time_t actaul_time)
     pixelarray[114] = 1;
     pixelarray[115] = 1;
     
-    create_minutes(&pixelarray[0], actaul_time.minutes );
+    // set right pixel for minutes and hours
+    create_minutes(&pixelarray[0], actaul_time.minutes );               
     uint8_t * p_pixelarray = create_hours(&pixelarray[0], actaul_time.hour, actaul_time.minutes );
     return p_pixelarray;
 }
 
 uint8_t * create_hours(uint8_t * p_array, uint8_t hour, uint8_t minutes )
 {
-    uint8_t hour_12;
+    static uint8_t hour_12;
+    static uint8_t temp_hour;
 
-    if(hour == 0 || hour == 12)
+    // if the next full hour is called
+    if((minutes/5) >= 5 || (minutes/5) == 3)
+    {
+        temp_hour = hour + 1;
+    }
+    else
+    {
+        temp_hour = hour;
+    }
+
+    if(temp_hour == 0 || temp_hour == 12 || temp_hour == 24)
     {
         hour_12 = 12;
     }
     else
     {
-        hour_12 = hour%12;
-    }
-
-    if((minutes/5) >= 5 || (minutes/5) == 3)
-    {
-        hour_12 = hour_12 + 1;
+        hour_12 = temp_hour%12;
     }
 
    switch ( hour_12 ){
         case 1 :
-            for(uint8_t i = 50; i<54; i++){ p_array[i] = 1; } break; // EINS
+            if(minutes/5 == 0)
+            {for(uint8_t i = 50; i<53; i++){ p_array[i] = 1; } break;} // EIN
+            else
+            {for(uint8_t i = 50; i<54; i++){ p_array[i] = 1; } break;} // EINS
         case 2 : 
             for(uint8_t i = 15; i<19; i++){ p_array[i] = 1; }break;  // ZWEI
         case 3 : 
@@ -76,6 +86,7 @@ void create_minutes(uint8_t * p_array, uint8_t minutes )
 {
   switch ( minutes/5 ){
         case 0 :
+            for(uint8_t i = 82; i<87; i++){ p_array[i] = 1; };        // GENAU
             for(uint8_t i = 2; i<5; i++){ p_array[i] = 1; } break;    // UHR
         case 1 :
             for(uint8_t i = 117; i<121; i++){ p_array[i] = 1; }       // FÜNF
@@ -99,9 +110,8 @@ void create_minutes(uint8_t * p_array, uint8_t minutes )
             for(uint8_t i = 95; i<99; i++){ p_array[i] = 1; }          // NACH
             for(uint8_t i = 66; i<70; i++){ p_array[i] = 1; }break;    // HALB
         case 8 : 
-            for(uint8_t i = 99; i<103; i++){ p_array[i] = 1; }         // ZEHN
-            for(uint8_t i = 95; i<99; i++){ p_array[i] = 1; }          // NACH
-            for(uint8_t i = 66; i<70; i++){ p_array[i] = 1; }break;    // HALB
+            for(uint8_t i = 103; i<110; i++){ p_array[i] = 1; }        // ZWANZIG
+            for(uint8_t i = 78; i<81; i++){ p_array[i] = 1; }break;    // VOR
         case 9:
             for(uint8_t i = 88; i<95; i++){ p_array[i] = 1; }         // VIETEL
             for(uint8_t i = 78; i<81; i++){ p_array[i] = 1; }break;   // VOR
