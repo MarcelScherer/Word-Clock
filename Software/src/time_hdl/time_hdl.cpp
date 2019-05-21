@@ -129,8 +129,7 @@ void set_rtc_date_time(clock_time_t time, uint16_t year, uint8_t month, uint8_t 
         Serial.print(":");
         Serial.println(time.seconds);
 #endif
-    //rtc.adjust(DateTime(year, month, day, time.hour, time.minutes, time.seconds));
-    rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
+    rtc.adjust(DateTime(year, month, day, time.hour, time.minutes, time.seconds));
 }
 
 /* get time from rtc clock */
