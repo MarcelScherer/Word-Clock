@@ -3,19 +3,12 @@
 #include "time_hdl/time_hdl.h"
 #include <NeoPixelBus.h>
 #include "word_array_hdl/word_array_hdl.h"
+#include "color_store/color_store.h"
 
 
 volatile int interruptCounter;
 int totalInterruptCounter;
 uint8_t update_hour;
-
-
-typedef struct  
-{
-  uint8_t red;
-  uint8_t green;
-  uint8_t blue;
-} led_col_t;
 
 led_col_t led_on  = {80, 80, 80};
 led_col_t led_off = {0,   0,  5};
@@ -44,6 +37,7 @@ void setup() {
   Serial.begin(115200);                                              /* start serial monitoring with 115.200 baut */ 
 
   time_hdl_initialize();
+  init_eeporm();
 
     if(WiFi.status() == WL_CONNECTED)
     {
@@ -52,6 +46,9 @@ void setup() {
 
   strip.Begin();
   strip.Show();
+
+  led_on = init_value_on();
+  led_off = init_value_off();
 
   timer = timerBegin(0, INTERRUPT_PRESCALER, true);                 /* config interrupt register */
   timerAttachInterrupt(timer, &onTimer, true);                      /* function ponter for call by interrup */
@@ -152,6 +149,8 @@ void loop() {
                        /((float)(0xFF)*((float)(0xFF)/(float)(MAX_BRIGHTNESS_ON)) ));
           led_on.blue = (uint8_t)((float)(data_dump[3])*(float)(data_dump[0])
                        /((float)(0xFF)*((float)(0xFF)/(float)(MAX_BRIGHTNESS_ON)) ));
+
+          set_value_on(led_on);
 #ifdef DEBUG
           Serial.print("Color ON:"); Serial.print(led_on.red); Serial.print(" ");
           Serial.print(led_on.green); Serial.print(" "); Serial.println(led_on.blue); 
@@ -165,6 +164,8 @@ void loop() {
                        /((float)(0xFF)*((float)(0xFF)/(float)(MAX_BRIGHTNESS_OFF)) ));
           led_off.blue = (uint8_t)((float)(data_dump[3])*(float)(data_dump[0])
                        /((float)(0xFF)*((float)(0xFF)/(float)(MAX_BRIGHTNESS_OFF)) ));
+
+          set_value_off(led_off);
 #ifdef DEBUG
           Serial.print("Color OFF:"); Serial.print(led_off.red); Serial.print(" ");
           Serial.print(led_off.green); Serial.print(" "); Serial.println(led_off.blue); 
