@@ -15,7 +15,6 @@ import android.widget.Toast;
 import com.larswerkman.holocolorpicker.ColorPicker;
 import com.larswerkman.holocolorpicker.OpacityBar;
 import com.larswerkman.holocolorpicker.SVBar;
-import com.larswerkman.holocolorpicker.SaturationBar;
 
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -23,7 +22,7 @@ import java.net.Socket;
 
 public class MainActivity extends AppCompatActivity {
 
-    static String SERVER_IP = "192.168.2.125";
+    static String SERVER_IP = "192.168.2.126";
     static int SERVER_PORT  = 80;
 
     ImageButton button_led_off;
