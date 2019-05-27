@@ -9,6 +9,7 @@ int8_t summertime_EU_offest(int year, byte month, byte day, byte hour, byte tzHo
 /* wlan connection */
 const char* ssid     = WLAN_SSID;                             
 const char* password = WIFIPWD; 
+char wiFiHostname[ ] = HOSTNAME;
 
 /* rtc object */
 static RTC_DS3231 rtc;
@@ -24,6 +25,7 @@ void time_hdl_initialize(void)
     uint8_t wlan_init_count = 0;
 
     WiFi.begin(ssid, password);                                         // set ssid and password
+    WiFi.setHostname(wiFiHostname);                                     // set Hostname
     while (    (WiFi.status() != WL_CONNECTED)                          // while wlan not connected
             && (wlan_init_count < 20))
     {
@@ -40,6 +42,8 @@ void time_hdl_initialize(void)
     Serial.println(".");
     Serial.print("IP address: ");                                      // print local ip
     Serial.println(WiFi.localIP());
+        Serial.print("Hostname: ");                                      // print local ip
+    Serial.println(WiFi.getHostname());
 #endif
 
     if(USE_RTC)

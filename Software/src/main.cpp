@@ -70,11 +70,11 @@ void loop() {
 
     clock_time_t timer = update_clock_time(ticks);                   /* update actual time */
 #ifdef DEBUG
-//    Serial.print(timer.hour);
-//    Serial.print(":");
-//    Serial.print(timer.minutes);
-//    Serial.print(":");
-//    Serial.println(timer.seconds);
+    Serial.print(timer.hour);
+    Serial.print(":");
+    Serial.print(timer.minutes);
+    Serial.print(":");
+    Serial.println(timer.seconds);
 #endif
     /* update time from internet or RTC */
     if((timer.hour - update_hour )%24 > UPDATE_TIME_VAL)            
@@ -127,7 +127,7 @@ void loop() {
     String currentLine = "";                // make a String to hold incoming data from the client
     while (client.connected())              // loop while the client's connected
     {
-      if (client.available())               // if there's bytes to read from the client,
+      if (client.available() >= 5)           // if there's bytes to read from the client,
       {
         uint8_t data_dump[5];
         std::fill_n(data_dump, sizeof(data_dump), 0);  // fill array with zeros
@@ -136,10 +136,11 @@ void loop() {
         for(uint8_t k = 0; k<5; k++)
         {
           data_dump[k] = client.read(); 
-          Serial.print(data_dump[k]); 
-          Serial.print(" ");
+#ifdef DEBUG
+          Serial.print("Data dump: ");
+          Serial.println(data_dump[k]); 
+#endif
         }
-        Serial.println(""); 
 
         if(data_dump[4] == 1)
         {
@@ -177,7 +178,8 @@ void loop() {
           strip.SetPixelColor(0, RgbColor(100, 0, 0));
           strip.Show();
         }
-        
+        client.flush();
+        client.stop();
       }
     }
   }
