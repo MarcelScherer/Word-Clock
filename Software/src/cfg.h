@@ -12,4 +12,6 @@
 #define MAX_BRIGHTNESS_ON   120
 #define MAX_BRIGHTNESS_OFF  15
 #define HOSTNAME "ESP_Word_Clock"
+#define TIME_DISPLAY_OFF 22
+#define TIME_DISPLAY_ON   6
 /*************************************************************************/
