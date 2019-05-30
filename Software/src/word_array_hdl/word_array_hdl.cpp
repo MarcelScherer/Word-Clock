@@ -10,6 +10,8 @@ uint8_t * create_word_array(clock_time_t actaul_time)
     static uint8_t pixelarray[NUM_OF_PIXEL];                            // pixel arry for pixel actuation
     std::fill_n(pixelarray, sizeof(pixelarray), 0);                     // fill array with zeros
 
+    if(check_if_display_on(actaul_time))
+
     /* ES */
     pixelarray[110] = 1;
     pixelarray[111] = 1;
@@ -122,4 +124,38 @@ void create_minutes(uint8_t * p_array, uint8_t minutes )
             for(uint8_t i = 117; i<121; i++){ p_array[i] = 1; }       // FÜNF
             for(uint8_t i = 78; i<81; i++){ p_array[i] = 1; }break;   // VOR
   }
+}
+
+bool check_if_display_on(clock_time_t actaul_time)
+{
+    if(TIME_DISPLAY_OFF == TIME_DISPLAY_ON)                           /* Display always on */
+    {
+        return true;
+    }
+    else if(TIME_DISPLAY_OFF > TIME_DISPLAY_ON)                       /* Display off over dateline  */
+    {
+        if(    actaul_time.hour >= TIME_DISPLAY_OFF
+            || actaul_time.hour <  TIME_DISPLAY_ON)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+    else               
+    {
+        if(    actaul_time.hour >= TIME_DISPLAY_OFF
+            && actaul_time.hour <  TIME_DISPLAY_ON)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+    
+    return true;
 }
