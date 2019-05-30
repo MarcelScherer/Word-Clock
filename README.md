@@ -1,7 +1,6 @@
 # Word-Clock with Android App for color changing (WIP)
 
-<img src="https://github.com/MarcelScherer/Word-Clock/blob/master/Docu/Screenshot_20190530-212208.png" alt="drawing" width="100"/>
-<img src="https://github.com/MarcelScherer/Word-Clock/blob/master/Docu/IMG_20190517_214902.jpg" alt="drawing" width="400"/>
+<img src="https://github.com/MarcelScherer/Word-Clock/blob/master/Docu/IMG_20190517_214902.jpg" alt="drawing" width="600"/>
 
 
 # Hardware
