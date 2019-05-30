@@ -2,6 +2,7 @@
 #include "../cfg.h"
 #include <string.h>
 #include <RTClib.h>
+#include <ESPmDNS.h>
 
 static void set_clock_timer(void);
 int8_t summertime_EU_offest(int year, byte month, byte day, byte hour, byte tzHours);
@@ -9,7 +10,6 @@ int8_t summertime_EU_offest(int year, byte month, byte day, byte hour, byte tzHo
 /* wlan connection */
 const char* ssid     = WLAN_SSID;                             
 const char* password = WIFIPWD; 
-char wiFiHostname[ ] = HOSTNAME;
 
 /* rtc object */
 static RTC_DS3231 rtc;
@@ -25,7 +25,6 @@ void time_hdl_initialize(void)
     uint8_t wlan_init_count = 0;
 
     WiFi.begin(ssid, password);                                         // set ssid and password
-    WiFi.setHostname(wiFiHostname);                                     // set Hostname
     while (    (WiFi.status() != WL_CONNECTED)                          // while wlan not connected
             && (wlan_init_count < 20))
     {
@@ -42,8 +41,6 @@ void time_hdl_initialize(void)
     Serial.println(".");
     Serial.print("IP address: ");                                      // print local ip
     Serial.println(WiFi.localIP());
-        Serial.print("Hostname: ");                                      // print local ip
-    Serial.println(WiFi.getHostname());
 #endif
 
     if(USE_RTC)
@@ -69,10 +66,17 @@ void time_hdl_initialize(void)
         timeClient.forceUpdate();                                       /* ... and read time from internet */
         set_clock_timer();                                              /* ... convert internet time to clock_time */
         set_rtc_date_time(clock_time, 2018, 1, 1);                      /* write actual time in rtc clock */
+
+        if (!MDNS.begin("Word_Clock")) 
+        {
+#ifdef DEBUG 
+            Serial.println("Error setting up MDNS responder!");
+#endif 
+        }
 #ifdef DEBUG 
         Serial.println(timeClient.getFormattedTime());
-#endif       
-    }
+#endif 
+    }        
     else                                                                /* if wlan is not connected ... */
     {
         clock_time = get_rtc_time();                                    /* reat time from rtc clock */

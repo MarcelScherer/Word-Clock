@@ -104,19 +104,30 @@ void loop() {
     }
 
     /* update all pixels from pixel array*/
-    uint8_t * p_pixel_array = create_word_array(timer);
-    for(int8_t i=0; i<NUM_OF_PIXEL; i++)
+    if(check_if_display_on(timer))
     {
-      if(p_pixel_array[i]  == 1)
+      uint8_t * p_pixel_array = create_word_array(timer);
+      for(int8_t i=0; i<NUM_OF_PIXEL; i++)
       {
-        strip.SetPixelColor(i, COLOR_ON);
+        if(p_pixel_array[i]  == 1)
+        {
+          strip.SetPixelColor(i, COLOR_ON);
+        }
+        else
+        {
+          strip.SetPixelColor(i, COLOR_OFF);
+        }
+        
       }
-      else
-      {
-        strip.SetPixelColor(i, COLOR_OFF);
-      }
-      
     }
+    else
+    {
+      for(int8_t i=0; i<NUM_OF_PIXEL; i++)
+      {
+        strip.SetPixelColor(i, RgbColor(0, 0, 0));
+      }
+    }
+    
     strip.Show();
   } /* end of second cycle*/
 
