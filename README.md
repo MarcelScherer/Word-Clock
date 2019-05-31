@@ -2,6 +2,11 @@
 
 <img src="https://github.com/MarcelScherer/Word-Clock/blob/master/Docu/IMG_20190517_214902.jpg" alt="drawing" width="600"/>
 
+in addition, the following external sources are used in this project ... <br>
+[NTPClinet for get actual time](https://github.com/arduino-libraries/NTPClient) <br>
+[RTClib for offline function](https://github.com/adafruit/RTClib) <br>
+[NeoPixelBus for control ws2812b strip](https://github.com/Makuna/NeoPixelBus) <br>
+letterboxes.scad (I don't know the original link, sorry ...)
 
 # Hardware
 
@@ -22,13 +27,45 @@ After that you have to fix the led ws2812b stripes ... <br>
 
 # Software
 
-You have to compile and flash the sorce (I do it with Visual Studio Code) an an ESP32. You can change the pinning in the cfg.h file. I use the pinning ... <br>
+You have to compile and flash the sorce (I do it with Visual Studio Code) an an ESP32. You can change the pinning for the led-strip in the cfg.h file. I use the pinning ... <br>
 
-| Pin      |   function    | 
-|----------|:-------------:|
-| 15       |  Led Pin      | 
-| GND      |  Ground       | 
-| 5V       |  Power Supply | 
+| Pin      |   LED-Strip   | Color | 
+|----------|:-------------:|-------|  
+| P15      |  Led Pin      | green |
+| GND      |  Ground       | white |
+| 5V       |  Power Supply | red   |
+
+| Pin      | RTC           | Color | 
+|----------|:-------------:|-------|  
+| P21      |  SDA          | green |
+| P22      |  Ground       | yellow|
+| 5V       |  Power Supply | red   |
+| GND      |  GND          | blue  |
+
+you can/shold config also in the cfg.h file ... <br>
+
+| define             | function                              | 
+|--------------------|---------------------------------------|
+|INTERRUPT_PRESCALER | 1000.000 ticks per second             |
+|                    | depend on board                       |
+|INTERRUPT_TICK      | how many ticks to next interrupt      |
+|WIFIPWD             | wifi password                         |
+|WLAN_SSID           | wifi ssid                             |
+|UPDATE_TIME_VAL     | ntc update time interval in hours     |
+|USE_RTC             | if you use a RTC or not true/false    |
+|DEBUG               | if you activate debug information     |
+|                    | over seral output true/false          |
+|LED_PIN             | Pin for led strip                     |
+|NUM_OF_PIXEL        | number of led pixel 121 (11 * 11)     |
+|MAX_BRIGHTNESS_ON   | muximum brightness for led's where on |
+|MAX_BRIGHTNESS_OFF  | muximum brightness for led's where off|
+|TIME_DISPLAY_OFF    | time for display off                  |
+|TIME_DISPLAY_ON     | time for display on                   |
+
+if TIME_DISPLAY_OFF and TIME_DISPLAY_ON are same, the leds are allways on <br>
+
+<img src="https://github.com/MarcelScherer/Word-Clock/blob/master/Docu/front_1.jpg" alt="drawing" width="500"/> 
+<img src="https://github.com/MarcelScherer/Word-Clock/blob/master/Docu/rear_1.jpg" alt="drawing" width="500"/> 
 
 # Android App
 
