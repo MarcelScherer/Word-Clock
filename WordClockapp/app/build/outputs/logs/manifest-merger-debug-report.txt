@@ -1,0 +1,177 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:2:1-27:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\696f8b797a01763d28fc9cbcf6a34dee\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\7b791d354739f156950a0617842f1f5c\AndroidManifest.xml:2:1-11:12
+MERGED from [com.larswerkman:HoloColorPicker:1.5] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\b295aa06c3ce2aab8d0a1f61af9da66a\AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\9aa6760a90d57ce933759a4f10e039f1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\765199bf5c0039640e232cb7eec00643\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\ea5d5c8939f2c8cf608a40983f09ff8b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\a1c630f244ca47091d68575b9d4ac900\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\8aafbfd7dcce383bff3c6ce7067041e0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\32ee9af1eda8e74c66e4e6d95685ba7a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\0a94c9aa6661d44768b48256bab25c0e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\c5730fed0e7d278fee98510d6174dad8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\08d8b356cfc6fd8fb2723e1f703cff20\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\5d35eb6838485fdd7b0fa1e1225993ad\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\7ace3c83c9ca89fdb9d3b8b0cfe0ef53\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\a9db528daee4d91d215f32850bb1bc87\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\8db2221a002807eb26b5b8117badaef7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\a30a44c4b55da9d68668fdd6ba20adcc\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\fad7f31d78f8e48c45c0ff4c6437c802\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\67ac6fdfe0912b09ed5b5a00409310aa\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\d6e585dd2a088d663de280548182809c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\fc4e78f2dee2873fd2004e569bf1e52a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\c5c632d3e4ad60e0d1c690f3ebb47fa9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\2e9efa1513f6e46917c9b61a42c5f4af\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\8adfc24aa922604ae9c59d149a013a50\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\fc3cb5aec03224cbc82756a0d07daae9\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\a20ac240c5b3c9e328666d9d2fed0053\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\eccb2271ee41c78b9de6f7bfabbdc885\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\99de7c1e62f8494d4b53c1044d063d7f\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:2:1-27:12
+	package
+		ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:3:5-36
+		INJECTED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:2:1-27:12
+		INJECTED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:2:1-27:12
+		INJECTED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:5:5-76
+	android:name
+		ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:5:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:6:5-76
+	android:name
+		ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:6:22-73
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:7:22-76
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:8:5-67
+	android:name
+		ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:8:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:9:22-76
+application
+ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:11:5-25:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\7b791d354739f156950a0617842f1f5c\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\7b791d354739f156950a0617842f1f5c\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\a30a44c4b55da9d68668fdd6ba20adcc\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\a30a44c4b55da9d68668fdd6ba20adcc\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\fad7f31d78f8e48c45c0ff4c6437c802\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\fad7f31d78f8e48c45c0ff4c6437c802\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\a30a44c4b55da9d68668fdd6ba20adcc\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:16:9-35
+	android:label
+		ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:14:9-41
+	android:roundIcon
+		ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:15:9-54
+	android:icon
+		ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:13:9-43
+	android:allowBackup
+		ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:17:9-40
+activity#com.scherer.wordclock.MainActivity
+ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:18:9-24:20
+	android:name
+		ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:18:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:19:13-23:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml:22:27-74
+uses-sdk
+INJECTED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\696f8b797a01763d28fc9cbcf6a34dee\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\696f8b797a01763d28fc9cbcf6a34dee\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\7b791d354739f156950a0617842f1f5c\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\7b791d354739f156950a0617842f1f5c\AndroidManifest.xml:5:5-7:41
+MERGED from [com.larswerkman:HoloColorPicker:1.5] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\b295aa06c3ce2aab8d0a1f61af9da66a\AndroidManifest.xml:5:5-7:41
+MERGED from [com.larswerkman:HoloColorPicker:1.5] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\b295aa06c3ce2aab8d0a1f61af9da66a\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\9aa6760a90d57ce933759a4f10e039f1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\9aa6760a90d57ce933759a4f10e039f1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\765199bf5c0039640e232cb7eec00643\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\765199bf5c0039640e232cb7eec00643\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\ea5d5c8939f2c8cf608a40983f09ff8b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\ea5d5c8939f2c8cf608a40983f09ff8b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\a1c630f244ca47091d68575b9d4ac900\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\a1c630f244ca47091d68575b9d4ac900\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\8aafbfd7dcce383bff3c6ce7067041e0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\8aafbfd7dcce383bff3c6ce7067041e0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\32ee9af1eda8e74c66e4e6d95685ba7a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\32ee9af1eda8e74c66e4e6d95685ba7a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\0a94c9aa6661d44768b48256bab25c0e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\0a94c9aa6661d44768b48256bab25c0e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\c5730fed0e7d278fee98510d6174dad8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\c5730fed0e7d278fee98510d6174dad8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\08d8b356cfc6fd8fb2723e1f703cff20\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\08d8b356cfc6fd8fb2723e1f703cff20\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\5d35eb6838485fdd7b0fa1e1225993ad\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\5d35eb6838485fdd7b0fa1e1225993ad\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\7ace3c83c9ca89fdb9d3b8b0cfe0ef53\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\7ace3c83c9ca89fdb9d3b8b0cfe0ef53\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\a9db528daee4d91d215f32850bb1bc87\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\a9db528daee4d91d215f32850bb1bc87\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\8db2221a002807eb26b5b8117badaef7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\8db2221a002807eb26b5b8117badaef7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\a30a44c4b55da9d68668fdd6ba20adcc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\a30a44c4b55da9d68668fdd6ba20adcc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\fad7f31d78f8e48c45c0ff4c6437c802\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\fad7f31d78f8e48c45c0ff4c6437c802\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\67ac6fdfe0912b09ed5b5a00409310aa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\67ac6fdfe0912b09ed5b5a00409310aa\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\d6e585dd2a088d663de280548182809c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\d6e585dd2a088d663de280548182809c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\fc4e78f2dee2873fd2004e569bf1e52a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\fc4e78f2dee2873fd2004e569bf1e52a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\c5c632d3e4ad60e0d1c690f3ebb47fa9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\c5c632d3e4ad60e0d1c690f3ebb47fa9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\2e9efa1513f6e46917c9b61a42c5f4af\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\2e9efa1513f6e46917c9b61a42c5f4af\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\8adfc24aa922604ae9c59d149a013a50\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\8adfc24aa922604ae9c59d149a013a50\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\fc3cb5aec03224cbc82756a0d07daae9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\fc3cb5aec03224cbc82756a0d07daae9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\a20ac240c5b3c9e328666d9d2fed0053\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\a20ac240c5b3c9e328666d9d2fed0053\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\eccb2271ee41c78b9de6f7bfabbdc885\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\eccb2271ee41c78b9de6f7bfabbdc885\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\99de7c1e62f8494d4b53c1044d063d7f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\scher\.gradle\caches\transforms-2\files-2.1\99de7c1e62f8494d4b53c1044d063d7f\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\scher\Documents\GitHub\Word-Clock\WordClockApp\app\src\main\AndroidManifest.xml
