@@ -27,7 +27,7 @@ After that you have to fix the led ws2812b stripes ... <br>
 
 # Software
 
-You have to compile and flash the sorce (I do it with Visual Studio Code) an an ESP32. You can change the pinning for the led-strip in the cfg.h file. I use the pinning ... <br>
+You have to compile and flash the sorce (I do it with Visual Studio Code) an an ESP32. For ESP8266 you have to change small things like led pin, NeoPixelBus definition, and so on ...  You can change the pinning for the led-strip in the cfg.h file. I use the pinning ... <br>
 
 | Pin      |   LED-Strip   | Color | 
 |----------|:-------------:|-------|  
@@ -69,6 +69,6 @@ if TIME_DISPLAY_OFF and TIME_DISPLAY_ON are same, the leds are allways on <br>
 
 # Android App
 
-The android app find the word-clock with the mDNS "Word_Clock.local" <br>
+The android app find the word-clock with the mDNS "Word_Clock.local". You can compile the [android procject](https://github.com/MarcelScherer/Word-Clock/tree/master/WordClockapp), or istall direct the [SDK](https://github.com/MarcelScherer/Word-Clock/blob/master/WordClockapp/app/build/outputs/apk/debug/app-debug.apk) <br>
 
 <img src="https://github.com/MarcelScherer/Word-Clock/blob/master/Docu/Screenshot_20190530-212208.png" alt="drawing" width="300"/>
