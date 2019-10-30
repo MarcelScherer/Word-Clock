@@ -24,6 +24,8 @@ void time_hdl_initialize(void)
 {
     uint8_t wlan_init_count = 0;
 
+    pinMode(SUMMER_TIME_PIN, INPUT);                                    // sets the digital pin for summer time switch as input
+
     WiFi.begin(ssid, password);                                         // set ssid and password
     while (    (WiFi.status() != WL_CONNECTED)                          // while wlan not connected
             && (wlan_init_count < 20))
@@ -87,8 +89,20 @@ void time_hdl_initialize(void)
 /* convert ntc time to clock_time */
 static void set_clock_timer(void)
 {
-    
-    clock_time.hour    = timeClient.getHours() + 1; // +1 wegen sommerzeit TODO
+    if(!digitalRead(SUMMER_TIME_PIN))
+    {
+        clock_time.hour    = timeClient.getHours();                     // winter time
+#ifdef DEBUG 
+        Serial.println("winter time");
+#endif 
+    }
+    else
+    {
+        clock_time.hour    = timeClient.getHours() + 1;                 // summer time
+#ifdef DEBUG 
+        Serial.println("summer time");
+#endif 
+    }
     clock_time.minutes = timeClient.getMinutes();
     clock_time.seconds = timeClient.getSeconds();
 }
