@@ -1,4 +1,0 @@
-#Thu May 30 12:35:30 CEST 2019
-base.0=C\:\\Users\\scher\\Documents\\GitHub\\Word-Clock\\WordClockApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
-path.0=classes.dex
-renamed.0=classes.dex
